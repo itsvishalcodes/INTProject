@@ -1,0 +1,53 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.weather-section {
+    background-image: url(".//assets/dawn.jpg");
+    min-height: 100vh;
+    position: relative;
+}
+
+.weather-main-data {
+    margin: 30px;
+    width: calc(100% - 200px);
+    font-weight: 800;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* .weather-main-data > div {
+    padding: 0 30px;
+} */
+
+.weather-search {
+    margin: 50px 0;
+}
+
+.loc-name {
+    font-size: 2rem;
+}
+
+.date {
+    font-size: 1rem;
+}
+
+.weather-type > span {
+    font-size : 1.5rem;
+}
+
+.news-section {
+    background-color: rgba(22, 2, 11, 0.849);
+    min-height: 100vh;
+
+}
+
+.card.bg-info {
+    background-color: #43838d33!important;
+}
+
+.news-element {
+    padding: 15px 10px;
+}

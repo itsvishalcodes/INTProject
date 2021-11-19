@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>News and Weather Website</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <section class="weather-section col-12 col-lg-8">
+                <div style="margin: 25px 0 0 15px;">Weather.</div>
+
+                <div class="weather-search input-group lg-3">
+                    <input id="loc-search" type="text" class="form-control" placeholder="Enter your Location here..." aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" onclick="fetchWeather()" >Search</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Temperatures</div>
+                            <div class="card-body">
+                                <h6 class="card-title row">
+                                    <div class="col-6">Temp Min</div>
+                                    <div class="col-6">12&deg;</div>
+                                </h6>
+                                <h6 class="card-title row">
+                                    <div class="col-6">Temp Max</div>
+                                    <div class="col-6">21&deg;</div>
+                                </h6>
+                                <h6 class="card-title row">
+                                    <div class="col-6">Temp Feels lIke </div>
+                                    <div class="col-6">17&deg;</div>
+                                </h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Other Infos</div>
+                            <div class="card-body">
+                                <h6 class="card-title row">
+                                    <div class="col-6">Pressure</div>
+                                    <div class="col-6">1031</div>
+                                </h6>
+                                <h6 class="card-title row">
+                                    <div class="col-6">Humidity</div>
+                                    <div class="col-6">83</div>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="weather-main-data row">
+                    <div class="col-12 col-sm-6 col-md-4">16&deg;</div>
+                    <div class="col-12 col-sm-6 col-md-4 loc-and-date">
+                        <img src="https://img.icons8.com/clouds/100/000000/worldwide-location.png" style="height: 50px; width: 50px;" />
+                        <span class="loc-name">London</span>
+                        <!-- <hr/>
+                        <span class="date">h</span> -->
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 weather-type">
+                        <img
+                            src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-cloudy-weather-justicon-flat-justicon-1.png" 
+                            style="height: 50px; width: 50px;"
+                        />
+                        <span>Cloudy</span>
+                    </div>
+                </div>
+            </section>
+            <section class="news-section col-12 col-lg-4">
+                <div style="margin: 25px 0 0 15px;">News.</div>
+                <hr style="border: 1px solid white;"/>
+                <h2>Top Headlines for London...</h2>
+                <hr style="border-top: 1px dashed white;" />
+                <div class="news-element">Taiwan Oct export orders seen rising for 20th straight month - Reuters</div>
+                <div class="news-element">The Pixel Fold was delayed because Samsung’s foldables are too good</div>
+                <div class="news-element">Bruised to Steve Jobs: the seven best films to watch on TV this week</div>
+                <div class="news-element">From The Beatles: Get Back to Hawkeye – the seven best shows to stream this week</div>
+                <div class="news-element">The Guide #9: The problem with The Problem with Jon Stewart</div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
