@@ -40,15 +40,15 @@
                             <div class="card-body">
                                 <h6 class="card-title row">
                                     <div class="col-6">Temp Min</div>
-                                    <div class="col-6">12&deg;</div>
+                                    <div id="temp-min" class="col-6">12&deg;</div>
                                 </h6>
                                 <h6 class="card-title row">
                                     <div class="col-6">Temp Max</div>
-                                    <div class="col-6">21&deg;</div>
+                                    <div id="temp-max" class="col-6">21&deg;</div>
                                 </h6>
                                 <h6 class="card-title row">
                                     <div class="col-6">Temp Feels lIke </div>
-                                    <div class="col-6">17&deg;</div>
+                                    <div id="temp-feel" class="col-6">17&deg;</div>
                                 </h6>
                                 
                             </div>
@@ -60,11 +60,11 @@
                             <div class="card-body">
                                 <h6 class="card-title row">
                                     <div class="col-6">Pressure</div>
-                                    <div class="col-6">1031</div>
+                                    <div id="pressure" class="col-6">1031</div>
                                 </h6>
                                 <h6 class="card-title row">
                                     <div class="col-6">Humidity</div>
-                                    <div class="col-6">83</div>
+                                    <div id="humidity" class="col-6">83</div>
                                 </h6>
                             </div>
                         </div>
@@ -73,10 +73,10 @@
                 
 
                 <div class="weather-main-data row">
-                    <div class="col-12 col-sm-6 col-md-4">16&deg;</div>
+                    <div id="weather-temp" class="col-12 col-sm-6 col-md-4">16&deg;</div>
                     <div class="col-12 col-sm-6 col-md-4 loc-and-date">
                         <img src="https://img.icons8.com/clouds/100/000000/worldwide-location.png" style="height: 50px; width: 50px;" />
-                        <span class="loc-name">London</span>
+                        <span id="loc-main" class="loc-name">London</span>
                         <!-- <hr/>
                         <span class="date">h</span> -->
                     </div>
@@ -85,20 +85,22 @@
                             src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-cloudy-weather-justicon-flat-justicon-1.png" 
                             style="height: 50px; width: 50px;"
                         />
-                        <span>Cloudy</span>
+                        <span id="weather-type">Cloudy</span>
                     </div>
                 </div>
             </section>
             <section class="news-section col-12 col-lg-4">
                 <div style="margin: 25px 0 0 15px;">News.</div>
                 <hr style="border: 1px solid white;"/>
-                <h2>Top Headlines for London...</h2>
+                <h2>Top Headlines for <span id="country">US</span>...</h2>
                 <hr style="border-top: 1px dashed white;" />
-                <div class="news-element">Taiwan Oct export orders seen rising for 20th straight month - Reuters</div>
-                <div class="news-element">The Pixel Fold was delayed because Samsung’s foldables are too good</div>
-                <div class="news-element">Bruised to Steve Jobs: the seven best films to watch on TV this week</div>
-                <div class="news-element">From The Beatles: Get Back to Hawkeye – the seven best shows to stream this week</div>
-                <div class="news-element">The Guide #9: The problem with The Problem with Jon Stewart</div>
+                <div id="news-headlines">
+                    <div class="news-element">Taiwan Oct export orders seen rising for 20th straight month - Reuters</div>
+                    <div class="news-element">The Pixel Fold was delayed because Samsung’s foldables are too good</div>
+                    <div class="news-element">Bruised to Steve Jobs: the seven best films to watch on TV this week</div>
+                    <div class="news-element">From The Beatles: Get Back to Hawkeye – the seven best shows to stream this week</div>
+                    <div class="news-element">The Guide #9: The problem with The Problem with Jon Stewart</div>
+                </div>
             </section>
         </div>
     </div>
